@@ -1,0 +1,39 @@
+{
+  "os":  "Linux-5.15.0-124-generic-x86_64-with-glibc2.35",
+  "python":  "3.11.10",
+  "startedAt":  "2024-12-15T09:49:41.690577Z",
+  "program":  "/home/harry/RL_final/rl_3chess-main4/rl_3chess-main/train_v6_wandb.py",
+  "codePath":  "train_v6_wandb.py",
+  "email":  "r12942083@ntu.edu.tw",
+  "root":  "/home/harry/RL_final/rl_3chess-main4/rl_3chess-main",
+  "host":  "torrent",
+  "username":  "harry",
+  "executable":  "/home/harry/miniconda3/envs/rl_final/bin/python",
+  "codePathLocal":  "train_v6_wandb.py",
+  "cpu_count":  16,
+  "cpu_count_logical":  24,
+  "gpu":  "[NVIDIA GeForce RTX 4090]",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "1965172678656",
+      "used":  "1848806043648"
+    }
+  },
+  "memory":  {
+    "total":  "134740078592"
+  },
+  "cpu":  {
+    "count":  16,
+    "countLogical":  24
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 4090",
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada"
+    }
+  ],
+  "cudaVersion":  "12.3"
+}
