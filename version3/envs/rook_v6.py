@@ -401,12 +401,12 @@ class RookEnv(gym.Env):
         # print(cur_marker_coor)
         
         #CANNOT EXCLUDE
-        # if old_trajectory_flatten[cur_marker_coor[0]][cur_marker_coor[1]] >= 10: #It goes backward
-        #     # print("move to self traj, -1.5")
-        #     reward -= 1.5
-        # elif  old_trajectory_flatten[cur_marker_coor[0]][cur_marker_coor[1]] > 0: #It goes other's tragectory
-        #     # print("move to other's traj, +0.6")
-        #     reward += 0.8
+        if old_trajectory_flatten[cur_marker_coor[0]][cur_marker_coor[1]] >= 10: #It goes backward
+            # print("move to self traj, -1.5")
+            reward -= 1.5
+        elif  old_trajectory_flatten[cur_marker_coor[0]][cur_marker_coor[1]] > 0: #It goes other's tragectory
+            # print("move to other's traj, +0.6")
+            reward += 0.8
 
         if not (old_trajectory_flatten[prev_marker_coor[0]][prev_marker_coor[1]] > 10 and old_trajectory_flatten[cur_marker_coor[0]][cur_marker_coor[1]] > 0):
             self.wire_length+=1
