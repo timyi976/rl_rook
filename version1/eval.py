@@ -22,9 +22,10 @@ import argparse
 def parse_arg():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("--env", type=str, default="RookEnv_v5")
+    parser.add_argument("--env", type=str, default="RookEnv_v1")
     parser.add_argument("--algorithm", type=str, default="PPO")
     parser.add_argument("--map_file", type=str, default="./tasks/base_v1.txt")
+    parser.add_argument("--model_path", type=str, default="models/v1")
 
     return parser.parse_args()
 

@@ -167,9 +167,9 @@ def main():
     )
 
 
-    if not os.path.exists("model"):
-        os.makedirs("model")
-    train(model, args.epoch_num, args.timesteps_per_epoch, args.eval_episode_num, eval_env, f"model/{args.run_id}_{args.map_file[8:-4]}_", args.gif_strategy)
+    if not os.path.exists("models"):
+        os.makedirs("models")
+    train(model, args.epoch_num, args.timesteps_per_epoch, args.eval_episode_num, eval_env, f"models/{args.run_id}_{args.map_file[8:-4]}_", args.gif_strategy)
 
 if __name__ == "__main__":
     main()

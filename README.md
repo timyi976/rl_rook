@@ -1,7 +1,29 @@
 # rl_rook
 RL Course Final Project, 2024 Fall 
 
-Version 3:
+## Version 1:
+
+- Navigate into `version1/`.
+   ```bash
+   cd version1
+   ```
+
+- To create the running envionment, run following command. Assume `conda` is properly installed.
+   ```bash
+   conda create -n rook_v1 python=3.10 -y
+   pip3 install -r requirements.txt
+   ```
+
+- To train the model, run following command, then the trained model checkpoints will be saved under `models/v1`. The best checkpoint number will be shown on the terminal.
+   ```bash
+   python3 train.py --run_id v1 --epoch_num 500 --timesteps_per_epoch 100 --env RookEnv_v1 --map_file ./tasks/base_v1.txt --policy_net MlpPolicy
+   ```
+- To run inference on specific trained policy network, run the following command. In addition, change the `--model_path` argument to the best checkpoint from training, and change `--map_file` argument to the desired map. The map files are located unser `tasks/`.
+   ```bash
+   python3 eval.py --env RookEnv_v1 --algorithm PPO --map_file ./tasks/base_v1.txt --model_path models/v1/250
+   ```
+
+## Version 3:
 To reproduce the experimental results for version 3, please follow the steps below:
 * 1. Navigate to the directory: Go to the "version3" folder.
 * 2. Create the Conda environment: Run "conda env create -f environment.yml" to build the Conda environment.
