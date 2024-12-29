@@ -30,7 +30,8 @@ To reproduce the experimental results for version 3, please follow the steps bel
     * For Exp. E, you only need to use "unseen_eval_env".
 
 * 4. Inference (Using Pre-trained Models): If you wish to reproduce the results directly using pre-trained models:
-   * 4-1: Download the trained models from the following link: [https://drive.google.com/file/d/1AqJmkxnk13xylLxdtDEMvuPO8UmOEKuH/view?usp=drive_link](https://drive.google.com/drive/folders/1kh4oMNmzemlLqXdaESgoDLzg39LbHPNa?usp=drive_link)
-   * 4-2: Open "eval.py", and set the model path and test_folder correctly (refer to Section 3 for specific parameter settings).
-   * 4-3: Run "python eval.py". Then the gif is saved as "chess_animation.gif"
+   * 4-1: Create the Conda environment: Run "conda env create -f eval_environment.yml" to build the Conda environment.
+   * 4-2: Download the trained models from the following link: [https://drive.google.com/file/d/1AqJmkxnk13xylLxdtDEMvuPO8UmOEKuH/view?usp=drive_link](https://drive.google.com/drive/folders/1kh4oMNmzemlLqXdaESgoDLzg39LbHPNa?usp=drive_link)
+   * 4-3: Open "eval.py", and set the model path and test_folder correctly (refer to Section 3 for specific parameter settings).
+   * 4-4: Run "python eval.py". Then the gif is saved as "chess_animation.gif"
 
