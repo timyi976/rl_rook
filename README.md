@@ -80,7 +80,7 @@ To reproduce the experimental results for version 3, please follow the steps bel
       python train_v6_wandb.py
       ```
   * 3-5. Exp. E:<br>
-     * 3-5-1: In "train_v6_wandb.py", set "map_file_dir" on line 40 to "tasks_same_t_train".<br>
+     * 3-5-1: In "train_v6_wandb.py", set "map_file_dir" on line 40 to "tasks_same_t_train", and set "val_map_file_dir" on line 41 to "tasks_same_t_test"<br>
      * 3-5-2: To use a CNN feature extractor: Set the "policy_net" on line 44 to "CnnPolicy" and uncomment line 359.<br>
      * 3-5-3: Run
      ```bash
